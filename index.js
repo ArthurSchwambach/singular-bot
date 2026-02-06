@@ -133,7 +133,7 @@ client.on('interactionCreate', async i => {
 
   const id = i.user.id;
 
-  if (i.isChatInputCommand() && i.commandName === 'singular') {
+  if (i.isChatInputCommand() && i.commandName === 'ficha') {
     return i.reply(menuPrincipal(id));
   }
 
