@@ -79,7 +79,7 @@ function verFichaCompleta(id) {
 
     const embed = new EmbedBuilder()
         .setColor(0x00aaff)
-        .setTitle(`📄 Ficha Técnica: ${f.nome}`)
+        .setTitle(`📄 Ficha Singular: ${f.nome}`)
         .setDescription(`**Ocupação:** ${f.ocupacao || 'N/A'}\n**Idade:** ${f.idade} | **Altura:** ${f.altura} | **€$:** ${f.eurodolares}`)
         .addFields(
             { name: '❤️ Status Vital', value: `Vida: ${f.vida.atual}/${f.vida.max}\n${barra}\n🧠 Controle Neural: ${f.controleNeural || 0}`, inline: false },
